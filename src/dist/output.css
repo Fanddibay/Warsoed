@@ -429,6 +429,118 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* card */
+
+.card{
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* icon css */
+
+@font-face {
+  font-family: "Material Icons";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+
+  /* For IE6-8 */
+
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+      url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+      url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+      url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+/* Rules for sizing the icon. */
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-30 {
+  font-size: 30px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -508,6 +620,10 @@ body {
   }
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -517,6 +633,18 @@ body {
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.left-\[10px\]{
+  left: 10px;
+}
+
+.right-\[10px\]{
+  right: 10px;
+}
+
+.right-0{
+  right: 0px;
 }
 
 .z-20{
@@ -535,9 +663,29 @@ body {
   z-index: 50;
 }
 
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
+.float-right{
+  float: right;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
+}
+
+.mt-24{
+  margin-top: 6rem;
 }
 
 .mt-4{
@@ -550,10 +698,6 @@ body {
 
 .mt-32{
   margin-top: 8rem;
-}
-
-.mt-24{
-  margin-top: 6rem;
 }
 
 .-mt-24{
@@ -570,6 +714,10 @@ body {
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -600,6 +748,10 @@ body {
   width: 100%;
 }
 
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-wrap{
   flex-wrap: wrap;
 }
@@ -608,8 +760,20 @@ body {
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .self-center{
@@ -622,11 +786,6 @@ body {
 
 .rounded-lg{
   border-radius: 0.5rem;
-}
-
-.rounded-b-xl{
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
 }
 
 .border-b{
@@ -656,14 +815,14 @@ body {
      object-position: center;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .py-4{
@@ -671,8 +830,13 @@ body {
   padding-bottom: 1rem;
 }
 
-.pt-24{
-  padding-top: 6rem;
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pt-34{
+  padding-top: 8.5rem;
 }
 
 .pl-12{
@@ -683,12 +847,8 @@ body {
   padding-right: 15rem;
 }
 
-.pt-32{
-  padding-top: 8rem;
-}
-
-.pt-34{
-  padding-top: 8.5rem;
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -699,19 +859,14 @@ body {
   text-align: justify;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-lg{
@@ -719,16 +874,26 @@ body {
   line-height: 1.75rem;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
-.font-extrabold{
-  font-weight: 800;
-}
-
 .font-light{
   font-weight: 300;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .uppercase{
@@ -737,6 +902,26 @@ body {
 
 .capitalize{
   text-transform: capitalize;
+}
+
+.text-gray-600{
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(177 177 177 / var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(245 71 72 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -752,6 +937,11 @@ body {
 .text-gray-800{
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.hover\:-translate-y-1:hover{
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-red-600:hover{
@@ -775,11 +965,44 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:relative{
+    position: relative;
+  }
+
+  .md\:left-\[50px\]{
+    left: 50px;
+  }
+
+  .md\:right-\[6rem\]{
+    right: 6rem;
+  }
+
+  .md\:mt-\[2px\]{
+    margin-top: 2px;
+  }
+
+  .md\:ml-3{
+    margin-left: 0.75rem;
+  }
+
   .md\:block{
     display: block;
   }
 
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:hidden{
     display: none;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

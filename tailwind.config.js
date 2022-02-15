@@ -71,7 +71,7 @@ module.exports = {
           ...colors.gray,
           400: "#DCD6F7",
           ...colors.gray,
-          500: "#DCD6F7",
+          500: "#B1B1B1",
         },
         blue: {
           ...colors.blue,
