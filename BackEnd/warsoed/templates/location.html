@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+    
+    <!-- header -->
+    <!-- dekstop version-->
+    <header class="mx-auto flex container mt-8">
+      <div class="justify-start left-[10px] md:left-[50px] absolute">
+        <a href="{{ url_for('home') }}" class="inset-0">
+          <i class="material-icons md-30 hover:-translate-y-1 transform">arrow_back</i>
+        </a>
+      </div>
+      <div class="justify-end right-[10px] md:right-[6rem] absolute">
+        <div class="md:flex">
+          <i class="material-icons md-30 right-0 absolute md:relative">home</i>
+          <br class="md:hidden block" />
+          <h5 id="lokasi__desa" class="md:mt-[2px] md:ml-3 text-xl text-gray-600">{{ title }}</h5>
+        </div>
+      </div>
+    </header>
+    <!-- end dekstop version-->
+    <!-- end header -->
+
+    <main>
+      <!-- dekstop main content -->
+      <section class="mx-auto container items-center justify-center mt-36">
+        <h1 class="md:text-4xl text-3xl font-bold capitalize items-center text-center">UMKM area {{ title }}</h1>
+      </section>
+      <!-- column detail  -->
+      <section class="grid md:grid-cols-3 mx-auto container mt-24 gap-8">
+        {% for umkm in umkms %}
+        <a href="#" class="col-span-1 card hover:-translate-y-2 transform duration-300">
+          <img src="{{ url_for('static', filename=umkm.picture) }}" id="gambar__umkm" alt="" />
+          <div class="mt-8 px-2">
+            <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">{{ umkm.name }}</h5>
+            <h6 class="text-lg font-light text-gray-500 capitalize" id="lokasi__alamat">
+              {{ umkm.location_desc }}
+            </h6>
+            <p class="float-right text-red-500 text-lg" id="jumlah__menu">{{ len(umkm.menu) }}</p>
+          </div>
+        </a>
+        {% endfor %}
+      </section>
+      <!-- end column detail dekstop -->
+    </main>
+ {% endblock content %}

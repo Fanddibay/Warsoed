@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Unsoed - {{ title }}</title>
+    <!-- meta text -->
+    <meta property="og:title" content="Warsoed" />
+    <meta property="og:description" content="Warsoed adalah aplikasi untuk memudahkan umkm dalam mencari konsumen" />
+    <meta property="og:url" content="www.warsoed.com" />
+    <meta property="og:image" content="images/dummy-logo.png" />
+    <meta name="theme-color" content="#000" />
+    <!-- font google api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- output to tailwindcss -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='src/style.css') }}" />
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='src/images/favicon/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ url_for('static', filename='src/images/favicon/favicon.ico') }}" type="image/x-icon" />
+  </head>
+
+  <body>
+      
+    {% block content %}{% endblock %}
+         
+      <!-- request to join-->
+      <section class="mt-36 bg-slate-300">
+        <div class="py-18 items-center text-center flex-row md:px-0 px-6">
+          <h1 class="text-lg md:text-3xl font-bold capitalize">Daftarkan Usahamu Sekarang!</h1>
+          <h5 class="md:text-xl font-light text-center md:px-88 mt-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum iure laudantium facere enim suscipit
+            officia reiciendis quod, vel iste corrupti dolores fuga, aliquid deserunt. Dolorem, praesentium? Deleniti,
+            impedit fugiat?
+          </h5>
+          <div class="flex mt-12 justify-center space-x-12 font-bold">
+            <a
+              href="#"
+              class="py-4 px-12 bg-red-500 text-white rounded-lg hover:text-red-500 hover:border-red-500 border-2 hover:bg-slate-300"
+              >Via Email</a
+            >
+            <a
+              href="#"
+              class="py-4 px-12 border-2 border-red-500 text-red-500 rounded-lg hover:bg-red-500 hover:text-white"
+              >Via Whatsapp</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- end request to join -->
+
+    <footer class="mt-36 mx-auto container text-center md:border-t-4 border-t-2 border-slate-400">
+      <h5 class="font-light text-lg capitalize py-4">© 2022 - WARSOED. All rights reserved.</h5>
+    </footer>
+  </body>
+</html>
