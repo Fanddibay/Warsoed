@@ -23,101 +23,260 @@
     <!-- output to tailwindcss -->
     <link rel="stylesheet" href="/src/dist/output.css" />
     <link rel="stylesheet" href="/src/input.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <!-- favicon icon -->
     <link rel="shortcut icon" href="/src/images/favicon/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/src/images/favicon/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <!-- navbar -->
 
-      <!-- navbar mobile -->
-      <section class="block md:hidden container">
-        <div class="z-20 rounded-xl">
-          <img src="/src/images/logo.png" class="w-1/2 items-center self-center mx-auto" alt="" />
+    <!-- navbar -->
+    <!-- header mobile version -->
+    <section class="block md:hidden container">
+      <div class="z-20 rounded-xl">
+        <img src="/src/images/logo.png" class="w-1/2 items-center self-center mx-auto" alt="" />
+      </div>
+      <div class="w-screen h-screen bg-hero-img bg-no-repeat object-cover mt-4 border-b">
+        <div class="mx-auto items-center self-center justify-center pt-34">
+          <h1 class="text-2xl text-center text-white">Warung Soedriman</h1>
+          <p class="text-light text-white text-lg mt-12 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, repellendus neque? Blanditiis deleniti
+            sed recusandae tenetur explicabo, at quaerat harum tempora fugit a, inventore asperiores nihil sunt! Magni,
+            repellendus odit.
+          </p>
         </div>
-        <div class="w-screen h-screen bg-hero-img bg-no-repeat object-cover mt-4 border-b">
-          <div class="mx-auto items-center self-center justify-center pt-34">
-            <h1 class="text-2xl text-center text-white">Warung Soedriman</h1>
-            <p class="text-light text-white text-lg mt-12 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, repellendus neque? Blanditiis
-              deleniti sed recusandae tenetur explicabo, at quaerat harum tempora fugit a, inventore asperiores nihil
-              sunt! Magni, repellendus odit.
-            </p>
-          </div>
-          <div class="mx-auto mt-12 text-center">
-            <a href="#" class="bg-red-500 text-white px-12 py-4 mx-auto rounded-lg">Mulai</a>
-          </div>
+        <div class="mx-auto mt-12 text-center">
+          <a href="#" class="bg-red-500 text-white px-12 py-4 mx-auto rounded-lg">Mulai</a>
         </div>
-      </section>
-      <!-- end navbar mobile -->
+      </div>
+    </section>
+    <!-- end header mobile version -->
 
-      <!-- navbar dekstop -->
-      <section class="hidden md:block">
-        <nav class="flex flex-wrap items-center container px-12 mx-auto">
-          <div class="flex">
-            <div class="mt-4">
-              <img src="/src/images/logo.png" alt="" class="w-1/6" />
-            </div>
-            <ul class="flex mt-12 font-bold capitalize text-xl">
-              <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">home</a></li>
-              <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">service</a></li>
-              <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">menu</a></li>
-              <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">contact</a></li>
-            </ul>
-          </div>
-        </nav>
-        <!-- end navbar dekstop -->
-        <!-- navbar mobile -->
-        <!-- end navbar mobile -->
-      </section>
-      <!-- end navbar -->
-      <!-- jumbotron -->
-      <!-- dekstop jumbotron -->
-      <section class="hidden md:block">
+    <!-- header dekstop version -->
+    <!-- navbar -->
+    <nav class="hidden md:block">
+      <div class="flex flex-wrap items-center px-12 mx-auto">
         <div class="flex">
-          <div class="w-1/2 relative mt-32 pl-12 pr-60 -z-10">
-            <h1 class="font-extrabold text-4xl uppercase">Warsoed</h1>
-            <h3 class="font-light text-gray-300 text-2xl">Aplikasi untuk memudahkan umkm area <u>UNSOED</u></h3>
-            <p class="mt-24 text-justify font-light text-xl">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam id nostrum sit? Iusto minus earum
-              assumenda eum quibusdam officiis consequatur, hic laboriosam deserunt aperiam nobis soluta aliquam
-              tempore, quaerat possimus.
-            </p>
+          <div class="mt-4">
+            <img src="/src/images/logo.png" alt="" class="w-1/6" />
           </div>
-          <div class="-mt-24 -z-10 relative inset-0 w-1/2">
-            <img
-              src="/src/images/jumbotron.png "
-              class="relative w-full h-full object-cover object-center inset-0"
-              alt=""
-            />
+          <ul class="flex mt-12 font-bold capitalize text-xl">
+            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">home</a></li>
+            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">service</a></li>
+            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">menu</a></li>
+            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- hero -->
+    <section class="hidden md:block">
+      <div class="flex mb-96 mx-auto conainer">
+        <div class="w-1/2 mt-28 pl-12 pr-60">
+          <h1 class="font-extrabold text-4xl uppercase">Warsoed</h1>
+          <h3 class="font-light text-gray-300 text-2xl">Aplikasi untuk memudahkan umkm area <u>UNSOED</u></h3>
+          <p class="mt-16 text-justify font-light text-xl">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam id nostrum sit? Iusto minus earum
+            assumenda eum quibusdam officiis consequatur, hic laboriosam deserunt aperiam nobis soluta aliquam tempore,
+            quaerat possimus.
+          </p>
+          <div class="mt-14">
+            <a
+              href="#"
+              class="px-12 py-4 bg-red-500 text-gray-800 font-bold hover:bg-red-600 hover:text-white rounded-lg capitalize text-xl z-50"
+              >mulai</a
+            >
           </div>
         </div>
-        <div class="pl-12 -mt-32 z-40">
-          <a
-            href="#"
-            class="px-12 py-4 bg-red-500 text-gray-800 font-bold hover:bg-red-600 hover:text-white rounded-lg capitalize text-xl z-50"
-            >mulai</a
-          >
+        <div class="-z-10 w-1/2 absolute right-0 top-0">
+          <img src="/src/images/jumbotron.png " class="w-full h-full object-cover object-center inset-0" alt="" />
         </div>
-
-        <!-- button jumbotron -->
-
-        <!-- end button jumbotron -->
-      </section>
-      <!-- end dekstop jumbotron -->
-
-      <!-- end jumbotron -->
-    </header>
+      </div>
+    </section>
+    <!-- end hero -->
 
     <!-- end header -->
+
     <!-- main content -->
-    <main class="">
-      <div class="items-center mx-auto container mt-14 md:mt-24">
-        <h1 class="text-2xl font-bold capitalize">Memiliki service antara lain</h1>
-      </div>
+    <main class="mx-auto mt-14 md:mt-22 container">
+      <!-- about -->
+      <section id="about">
+        <div class="text-center flex- justify-center">
+          <h1 class="text-2xl lg:text-4xl font-bold capitalize">Memiliki service antara lain</h1>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-4 mt-14 place-items-center justify-items-center">
+          <div class="text-center px-12">
+            <img
+              src="/src/images/mudah.svg"
+              class="lg:mt-0 mt-12 lg:w-[90%] rounded-full text-center h-fulll content-center"
+              alt=""
+            />
+            <h3 class="text-2xl font-bold capitalize mt-12 lg:text-3xl">murah</h3>
+            <p class="font-light text-base lg:text-lg mt-4 text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
+              deserunt ducimus.
+            </p>
+          </div>
+          <div class="text-center px-12">
+            <img
+              src="/src/images/murah.svg"
+              class="lg:mt-0 mt-12 lg:w-[90%] rounded-full text-center h-full content-center"
+              alt=""
+            />
+            <h3 class="text-2xl font-bold capitalize mt-12 lg:text-3xl">murah</h3>
+            <p class="font-light text-base lg:text-lg mt-4 text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
+              deserunt ducimus.
+            </p>
+          </div>
+          <div class="text-center px-12">
+            <img
+              src="/src/images/hamburger.svg"
+              class="lg:mt-0 mt-12 lg:w-[90%] rounded-full text-center h-fulll content-center"
+              alt=""
+            />
+            <h3 class="text-2xl font-bold capitalize mt-12 lg:text-3xl">murah</h3>
+            <p class="font-light text-base lg:text-lg mt-4 text-gray-500">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
+              deserunt ducimus.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end about -->
+
+      <!-- list menu -->
+      <section id="list__menu" class="mt-32 mx-auto px-12 container">
+        <div class="text-start">
+          <h5 class="text-red-500 font-bold text-xl mb-4">Restaurant Kita</h5>
+          <h3 class="font-bold capitalize text-2xl">
+            Menu that always make <br />
+            you fall in love
+          </h3>
+        </div>
+      </section>
+
+      <!-- Slider main container dekstop -->
+      <section class="px-12 grid lg:col-span-3 col-span-1">
+        <div class="swiper mt-12 mx-auto container text-center">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-1.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                <div class="mt-8 px-2">
+                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
+                  <h6
+                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    id="lokasi__alamat"
+                  >
+                    jl. Cendrawasih 5. Rt/01, Rw/02
+                  </h6>
+                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                <div class="mt-8 px-2">
+                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
+                  <h6
+                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    id="lokasi__alamat"
+                  >
+                    jl. Cendrawasih 5. Rt/01, Rw/02
+                  </h6>
+                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-3.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                <div class="mt-8 px-2">
+                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
+                  <h6
+                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    id="lokasi__alamat"
+                  >
+                    jl. Cendrawasih 5. Rt/01, Rw/02
+                  </h6>
+                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                <div class="mt-8 px-2">
+                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
+                  <h6
+                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    id="lokasi__alamat"
+                  >
+                    jl. Cendrawasih 5. Rt/01, Rw/02
+                  </h6>
+                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="col-span-3 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-1.jpg" class="w-100 lg:w-[80%]" id="gambar__umkm" alt="" />
+                <div class="mt-8 px-2">
+                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
+                  <h6
+                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    id="lokasi__alamat"
+                  >
+                    jl. Cendrawasih 5. Rt/01, Rw/02
+                  </h6>
+                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-1.jpg" class="w-100 lg:w-[80%]" id="gambar__umkm" alt="" />
+                <div class="mt-8 px-2">
+                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
+                  <h6
+                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    id="lokasi__alamat"
+                  >
+                    jl. Cendrawasih 5. Rt/01, Rw/02
+                  </h6>
+                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- end list menu -->
     </main>
     <!-- end main content -->
+
+    <!-- jqeury -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- vanilla js -->
+    <script src="/src/js/main.js"></script>
   </body>
 </html>

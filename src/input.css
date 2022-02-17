@@ -9,6 +9,12 @@
     font-family: "Poppins", sans-serif;
   }
 
+  /* swiper js */
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
   /* card */
   .card {
     @apply bg-slate-100 rounded-lg  p-6;

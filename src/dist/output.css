@@ -429,6 +429,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* swiper js */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 /* card */
 
 .card{
@@ -617,6 +624,18 @@ body {
   }
 }
 
+.visible{
+  visibility: visible;
+}
+
+.static{
+  position: static;
+}
+
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -644,24 +663,28 @@ body {
   right: 0px;
 }
 
+.top-0{
+  top: 0px;
+}
+
 .z-20{
   z-index: 20;
-}
-
-.-z-10{
-  z-index: -10;
-}
-
-.z-40{
-  z-index: 40;
 }
 
 .z-50{
   z-index: 50;
 }
 
+.-z-10{
+  z-index: -10;
+}
+
 .col-span-1{
   grid-column: span 1 / span 1;
+}
+
+.col-span-3{
+  grid-column: span 3 / span 3;
 }
 
 .float-right{
@@ -698,32 +721,56 @@ body {
   margin-top: 1rem;
 }
 
-.mt-32{
-  margin-top: 8rem;
+.mb-96{
+  margin-bottom: 24rem;
 }
 
-.-mt-24{
-  margin-top: -6rem;
+.mt-28{
+  margin-top: 7rem;
 }
 
-.-mt-32{
-  margin-top: -8rem;
+.mt-16{
+  margin-top: 4rem;
 }
 
 .mt-14{
   margin-top: 3.5rem;
 }
 
+.mt-32{
+  margin-top: 8rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.inline{
+  display: inline;
 }
 
 .flex{
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
 .grid{
   display: grid;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
@@ -754,8 +801,20 @@ body {
   width: 100%;
 }
 
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-\[80\%\]{
+  width: 80%;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize{
+  resize: both;
 }
 
 .grid-cols-2{
@@ -768,6 +827,14 @@ body {
 
 .flex-wrap{
   flex-wrap: wrap;
+}
+
+.place-items-center{
+  place-items: center;
+}
+
+.content-center{
+  align-content: center;
 }
 
 .items-center{
@@ -786,8 +853,16 @@ body {
   justify-content: center;
 }
 
+.justify-items-center{
+  justify-items: center;
+}
+
 .gap-8{
   gap: 2rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .space-x-12 > :not([hidden]) ~ :not([hidden]){
@@ -806,6 +881,14 @@ body {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-2{
@@ -888,6 +971,11 @@ body {
   padding-right: 1rem;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pt-34{
   padding-top: 8.5rem;
 }
@@ -906,6 +994,10 @@ body {
 
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .text-justify{
@@ -940,6 +1032,11 @@ body {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -995,6 +1092,15 @@ body {
 .text-gray-800{
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.blur{
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .duration-300{
@@ -1072,14 +1178,6 @@ body {
     margin-left: 0.75rem;
   }
 
-  .md\:mt-18{
-    margin-top: 4.5em;
-  }
-
-  .md\:mt-24{
-    margin-top: 6rem;
-  }
-
   .md\:block{
     display: block;
   }
@@ -1127,6 +1225,77 @@ body {
 
   .md\:text-xl{
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:mt-0{
+    margin-top: 0px;
+  }
+
+  .lg\:mr-20{
+    margin-right: 5rem;
+  }
+
+  .lg\:mr-24{
+    margin-right: 6rem;
+  }
+
+  .lg\:mr-\[100px\]{
+    margin-right: 100px;
+  }
+
+  .lg\:mr-\[98px\]{
+    margin-right: 98px;
+  }
+
+  .lg\:mr-\[96px\]{
+    margin-right: 96px;
+  }
+
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:w-\[90\%\]{
+    width: 90%;
+  }
+
+  .lg\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
