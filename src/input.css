@@ -11,7 +11,7 @@
 
   /* card */
   .card {
-    @apply bg-slate-100 rounded-lg shadow-xl p-6;
+    @apply bg-slate-100 rounded-lg  p-6;
   }
 
   /* icon css */
