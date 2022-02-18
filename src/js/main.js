@@ -1,6 +1,6 @@
 var swiper = new Swiper(".swiper", {
   // Optional parameters
-  freeMode: 3,
+
   loop: false,
   speed: 400,
   grabCursor: true,
@@ -8,6 +8,7 @@ var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    dynamicBullets: true,
   },
 
   // Navigation arrows
@@ -17,8 +18,9 @@ var swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     300: {
-      slidesPerView: 1,
+      slidesPerView: "auto",
       spaceBetween: 20,
+      centeredSlides: true,
     },
     768: {
       slidesPerView: 2,
@@ -30,3 +32,5 @@ var swiper = new Swiper(".swiper", {
     },
   },
 });
+
+// hamburger menu

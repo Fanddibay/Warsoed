@@ -34,12 +34,44 @@
     <!-- header -->
 
     <!-- navbar -->
-    <!-- header mobile version -->
-    <section class="block md:hidden container">
-      <div class="z-20 rounded-xl">
-        <img src="/src/images/logo.png" class="w-1/2 items-center self-center mx-auto" alt="" />
-      </div>
-      <div class="w-screen h-screen bg-hero-img bg-no-repeat object-cover mt-4 border-b">
+    <!-- header and hero mobile version -->
+
+    <section class="block lg:hidden container">
+      <!-- nav mobile -->
+      <nav class="p-5 bg-white shadow lg:flex lg:items-center lg:justify-between">
+        <div class="flex justify-between items-center">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <img class="h-[4rem] inline" src="/src/images/logo.png" />
+          </span>
+
+          <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+            <i class="material-icons md-30" onclick="Menu(this)">menu</i>
+          </span>
+        </div>
+
+        <ul
+          class="lg:flex lg:items-center z-50 lg:static absolute bg-white w-full left-0 lg:w-auto lg:py-0 py-4 md:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+          <li class="mx-4 my-6 lg:my-0">
+            <a href="#" class="text-lg hover:text-red-500 duration-500">Home</a>
+          </li>
+          <li class="mx-4 my-6 lg:my-0">
+            <a href="#" class="text-lg hover:text-red-500 duration-500">Service</a>
+          </li>
+          <li class="mx-4 my-6 lg:my-0">
+            <a href="#" class="text-lg hover:text-red-500 duration-500">Menu</a>
+          </li>
+          <li class="mx-4 my-6 lg:my-0">
+            <a href="#" class="text-lg hover:text-red-500 duration-500">Contact</a>
+          </li>
+          <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">
+            Get started
+          </button>
+          <h2 class=""></h2>
+        </ul>
+      </nav>
+      <!-- end nav mobile -->
+      <div class="w-screen h-screen bg-hero-img bg-no-repeat object-cover border-b">
         <div class="mx-auto items-center self-center justify-center pt-34">
           <h1 class="text-2xl text-center text-white">Warung Soedriman</h1>
           <p class="text-light text-white text-lg mt-12 text-center">
@@ -49,7 +81,7 @@
           </p>
         </div>
         <div class="mx-auto mt-12 text-center">
-          <a href="#" class="bg-red-500 text-white px-12 py-4 mx-auto rounded-lg">Mulai</a>
+          <a href="#list__menu" class="bg-red-500 text-white px-12 py-4 mx-auto rounded-lg">Mulai</a>
         </div>
       </div>
     </section>
@@ -57,29 +89,30 @@
 
     <!-- header dekstop version -->
     <!-- navbar -->
-    <nav class="hidden md:block">
+    <nav class="hidden lg:block">
       <div class="flex flex-wrap items-center px-12 mx-auto">
         <div class="flex">
-          <div class="mt-4">
+          <div class="mt-4 pl-16">
             <img src="/src/images/logo.png" alt="" class="w-1/6" />
           </div>
           <ul class="flex mt-12 font-bold capitalize text-xl">
-            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">home</a></li>
-            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">service</a></li>
-            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">menu</a></li>
-            <li><a href="#" class="px-4 hover:text-red-500 hover:underline text-white">contact</a></li>
+            <li><a href="#" class="px-10 hover:text-red-500 hover:underline text-white">home</a></li>
+            <li><a href="#" class="px-10 hover:text-red-500 hover:underline text-white">service</a></li>
+            <li><a href="#" class="px-10 hover:text-red-500 hover:underline text-white">menu</a></li>
+            <li><a href="#" class="px-10 hover:text-red-500 hover:underline text-white">contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- end navbar -->
-    <!-- hero -->
-    <section class="hidden md:block">
+
+    <!-- hero dekstop -->
+    <section class="hidden lg:block">
       <div class="flex mb-96 mx-auto conainer">
-        <div class="w-1/2 mt-28 pl-12 pr-60">
+        <div class="w-1/2 mt-28 md:pl-28">
           <h1 class="font-extrabold text-4xl uppercase">Warsoed</h1>
           <h3 class="font-light text-gray-300 text-2xl">Aplikasi untuk memudahkan umkm area <u>UNSOED</u></h3>
-          <p class="mt-16 text-justify font-light text-xl">
+          <p class="mt-16 text-justify font-light text-xl md:pr-20">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam id nostrum sit? Iusto minus earum
             assumenda eum quibusdam officiis consequatur, hic laboriosam deserunt aperiam nobis soluta aliquam tempore,
             quaerat possimus.
@@ -97,26 +130,26 @@
         </div>
       </div>
     </section>
-    <!-- end hero -->
+    <!-- end hero dekstop -->
 
-    <!-- end header -->
+    <!-- end dekstop version -->
 
     <!-- main content -->
-    <main class="mx-auto mt-14 md:mt-22 container">
+    <main class="mx-auto mt-14 md:mt-36 lg:mt-22 container">
       <!-- about -->
       <section id="about">
         <div class="text-center flex- justify-center">
-          <h1 class="text-2xl lg:text-4xl font-bold capitalize">Memiliki service antara lain</h1>
+          <h1 class="text-3xl lg:text-4xl font-bold capitalize">Memiliki service antara lain</h1>
         </div>
-        <div class="grid lg:grid-cols-3 gap-4 mt-14 place-items-center justify-items-center">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-14 place-items-center justify-items-center">
           <div class="text-center px-12">
             <img
               src="/src/images/mudah.svg"
-              class="lg:mt-0 mt-12 lg:w-[90%] rounded-full text-center h-fulll content-center"
+              class="md:mt-0 mt-12 md:w-[90%] rounded-full text-center h-fulll content-center"
               alt=""
             />
-            <h3 class="text-2xl font-bold capitalize mt-12 lg:text-3xl">murah</h3>
-            <p class="font-light text-base lg:text-lg mt-4 text-gray-500">
+            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl">murah</h3>
+            <p class="font-light text-base md:text-lg mt-4 text-gray-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
               deserunt ducimus.
             </p>
@@ -124,11 +157,11 @@
           <div class="text-center px-12">
             <img
               src="/src/images/murah.svg"
-              class="lg:mt-0 mt-12 lg:w-[90%] rounded-full text-center h-full content-center"
+              class="md:mt-0 mt-12 md:w-[90%] rounded-full text-center h-full content-center"
               alt=""
             />
-            <h3 class="text-2xl font-bold capitalize mt-12 lg:text-3xl">murah</h3>
-            <p class="font-light text-base lg:text-lg mt-4 text-gray-500">
+            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl">murah</h3>
+            <p class="font-light text-base md:text-lg mt-4 text-gray-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
               deserunt ducimus.
             </p>
@@ -136,11 +169,11 @@
           <div class="text-center px-12">
             <img
               src="/src/images/hamburger.svg"
-              class="lg:mt-0 mt-12 lg:w-[90%] rounded-full text-center h-fulll content-center"
+              class="md:mt-0 mt-12 md:w-[90%] rounded-full text-center h-fulll content-center"
               alt=""
             />
-            <h3 class="text-2xl font-bold capitalize mt-12 lg:text-3xl">murah</h3>
-            <p class="font-light text-base lg:text-lg mt-4 text-gray-500">
+            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl">murah</h3>
+            <p class="font-light text-base md:text-lg mt-4 text-gray-500">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
               deserunt ducimus.
             </p>
@@ -161,13 +194,13 @@
       </section>
 
       <!-- Slider main container dekstop -->
-      <section class="px-12 grid lg:col-span-3 col-span-1">
+      <section class="px-12 grid md:col-span-3 col-span-1">
         <div class="swiper mt-12 mx-auto container text-center">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
                 <img src="/src/images/detail-1.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
                 <div class="mt-8 px-2">
                   <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
@@ -182,12 +215,12 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
                 <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
                 <div class="mt-8 px-2">
                   <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
                   <h6
-                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    class="text-xl lg:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
                     id="lokasi__alamat"
                   >
                     jl. Cendrawasih 5. Rt/01, Rw/02
@@ -197,7 +230,7 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
                 <img src="/src/images/detail-3.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
                 <div class="mt-8 px-2">
                   <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
@@ -212,12 +245,27 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
+              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-1.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                <div class="mt-8 px-2">
+                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
+                  <h6
+                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    id="lokasi__alamat"
+                  >
+                    jl. Cendrawasih 5. Rt/01, Rw/02
+                  </h6>
+                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
                 <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
                 <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
+                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
                   <h6
-                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                    class="text-xl lg:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
                     id="lokasi__alamat"
                   >
                     jl. Cendrawasih 5. Rt/01, Rw/02
@@ -227,23 +275,8 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="col-span-3 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-1.jpg" class="w-100 lg:w-[80%]" id="gambar__umkm" alt="" />
-                <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
-                  <h6
-                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
-                    id="lokasi__alamat"
-                  >
-                    jl. Cendrawasih 5. Rt/01, Rw/02
-                  </h6>
-                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="col-span-1 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-1.jpg" class="w-100 lg:w-[80%]" id="gambar__umkm" alt="" />
+              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                <img src="/src/images/detail-3.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
                 <div class="mt-8 px-2">
                   <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
                   <h6
@@ -258,13 +291,65 @@
             </div>
           </div>
           <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination active:bg-red-500"></div>
         </div>
       </section>
-
       <!-- end list menu -->
+      <!-- What about customer -->
+      <section class="mx-auto container px-12 mt-36">
+        <div class="grid lg:grid-cols-2">
+          <hr class="block lg:hidden" />
+          <h3 class="lg:hidden block text-2xl text-center md:text-left mb-8 md:mb-4 mt-6 font-bold capitalize">
+            What our customer <br />say about us
+          </h3>
+          <div class="">
+            <img src="/src/images/jumbotron.png" class="w-full lg:w-[80%] md:h-[70%] lg:h-[100%]" alt="" />
+          </div>
+          <div class="self-center lg:pr-24">
+            <h3 class="lg:block hidden text-3xl font-bold capitalize">What our customer <br />say about us</h3>
+            <p class="text-light text-base lg:text-lg text-gray-500 text-justify leading-tight mt-8 md:-mt-28 lg:mt-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam ducimus consequatur, accusamus et
+              minus eum? Tempora praesentium animi est sed perspiciatis, saepe corporis adipisci architecto ipsa, alias
+              pariatur debitis, eum laudantium ut Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+              dolore, velit quaerat facilis dolorem exercitationem? Repellat sequi numquam in aliquid!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- end What about customer -->
+      <!-- request to join -->
+      <section class="mt-36 bg-slate-300 rounded-lg mx-auto container">
+        <div class="py-18 items-center text-center flex-row md:px-0 px-6">
+          <h1 class="text-2xl md:text-3xl font-bold capitalize">Daftarkan Usahamu Sekarang!</h1>
+          <h5 class="md:text-xl font-light text-center lg:px-88 mt-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum iure laudantium facere enim suscipit
+            officia reiciendis quod, vel iste corrupti dolores fuga, aliquid deserunt. Dolorem, praesentium? Deleniti,
+            impedit fugiat?
+          </h5>
+          <div class="flex mt-12 justify-center space-x-12 font-bold">
+            <a
+              href="#"
+              class="md:py-4 md:px-12 py-4 px-6 bg-red-500 text-white rounded-lg hover:text-red-500 hover:border-red-500 border-2 hover:bg-slate-300"
+              >Via Email</a
+            >
+            <a
+              href="#"
+              class="md:py-4 md:px-12 py-4 px-6 border-2 border-red-500 text-red-500 rounded-lg hover:bg-red-500 hover:text-white"
+              >Via Whatsapp</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- end request to join -->
     </main>
     <!-- end main content -->
+    <!-- footer -->
+    <footer class="mt-36 mx-auto container text-center md:border-t-[3px] border-t-2 border-slate-200">
+      <h5 class="font-light text-lg capitalize py-4">© 2022 - WARSOED. All rights reserved.</h5>
+    </footer>
+    <!-- end footer -->
+
+    <!-- javascript -->
 
     <!-- jqeury -->
     <script
@@ -278,5 +363,13 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- vanilla js -->
     <script src="/src/js/main.js"></script>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"), list.classList.add("top-[80px]"), list.classList.add("opacity-100"))
+          : ((e.name = "menu"), list.classList.remove("top-[80px]"), list.classList.remove("opacity-100"));
+      }
+    </script>
   </body>
 </html>

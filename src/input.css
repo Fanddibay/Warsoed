@@ -9,12 +9,23 @@
     font-family: "Poppins", sans-serif;
   }
 
+  * {
+    scroll-behavior: smooth;
+  }
+
   /* swiper js */
   .swiper {
     width: 100%;
     height: 100%;
   }
 
+  .swiper-pagination-active {
+    background-color: red !important;
+  }
+
+  .swiper-slide:hover {
+    @apply -translate-y-3 transform duration-300;
+  }
   /* card */
   .card {
     @apply bg-slate-100 rounded-lg  p-6;
