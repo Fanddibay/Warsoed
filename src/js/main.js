@@ -32,5 +32,3 @@ var swiper = new Swiper(".swiper", {
     },
   },
 });
-
-// hamburger menu
