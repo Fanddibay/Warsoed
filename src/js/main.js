@@ -32,3 +32,23 @@ var swiper = new Swiper(".swiper", {
     },
   },
 });
+
+// mixitup js
+let mixer = mixitup(".data_require", {
+  selectors: {
+    target: ".food__item",
+  },
+  animation: {
+    duration: 300,
+  },
+});
+
+// active link
+const linkWork = document.querySelectorAll(".food__link");
+
+function activeWork() {
+  linkWork.forEach((l) => l.classList.remove("active-work"));
+  this.classList.add("active-work");
+}
+
+linkWork.forEach((l) => l.addEventListener("click", activeWork));

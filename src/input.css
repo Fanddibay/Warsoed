@@ -18,6 +18,12 @@
     padding: 8px;
   }
 
+  .active-work {
+    background-color: #cecece;
+    padding: 12px;
+    color: white;
+  }
+
   /* swiper js */
   .swiper {
     width: 100%;

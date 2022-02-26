@@ -438,6 +438,12 @@ td {
   padding: 8px;
 }
 
+.active-work {
+  background-color: #cecece;
+  padding: 12px;
+  color: white;
+}
+
 /* swiper js */
 
 .swiper {
@@ -724,6 +730,11 @@ td {
   margin-bottom: 1.5rem;
 }
 
+.mx-8{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
@@ -792,6 +803,10 @@ td {
   margin-left: 2rem;
 }
 
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
 .block{
   display: block;
 }
@@ -832,6 +847,10 @@ td {
   height: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -844,20 +863,12 @@ td {
   width: 16.666667%;
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
 .w-\[100\%\]{
   width: 100%;
 }
 
 .w-\[150\%\]{
   width: 150%;
-}
-
-.table-fixed{
-  table-layout: fixed;
 }
 
 .transform{
@@ -966,6 +977,10 @@ td {
   border-width: 2px;
 }
 
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
 .border-t-2{
   border-top-width: 2px;
 }
@@ -1040,11 +1055,6 @@ td {
   padding: 1rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1053,6 +1063,11 @@ td {
 .py-18{
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-4{
@@ -1073,6 +1088,11 @@ td {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-12{
@@ -1236,6 +1256,16 @@ td {
   color: rgb(46 46 46 / var(--tw-text-opacity));
 }
 
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-red-900{
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1247,6 +1277,18 @@ td {
 
 .opacity-100{
   opacity: 1;
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg{
@@ -1338,10 +1380,6 @@ td {
 .active\:bg-red-500:active{
   --tw-bg-opacity: 1;
   background-color: rgb(245 71 72 / var(--tw-bg-opacity));
-}
-
-.active\:font-bold:active{
-  font-weight: 700;
 }
 
 @media (min-width: 768px){
@@ -1445,8 +1483,16 @@ td {
     height: 70%;
   }
 
+  .md\:w-\[15\%\]{
+    width: 15%;
+  }
+
   .md\:w-\[90\%\]{
     width: 90%;
+  }
+
+  .md\:w-\[25\%\]{
+    width: 25%;
   }
 
   .md\:w-\[80\%\]{
@@ -1555,12 +1601,20 @@ td {
     height: 100%;
   }
 
+  .lg\:h-\[500px\]{
+    height: 500px;
+  }
+
   .lg\:w-auto{
     width: auto;
   }
 
   .lg\:w-\[80\%\]{
     width: 80%;
+  }
+
+  .lg\:w-\[15\%\]{
+    width: 15%;
   }
 
   .lg\:grid-cols-4{
@@ -1601,6 +1655,11 @@ td {
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:opacity-100{
