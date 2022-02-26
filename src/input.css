@@ -7,10 +7,15 @@
 @layer base {
   body {
     font-family: "Poppins", sans-serif;
+    /* background-color: #e8e8e9; */
   }
 
   * {
     scroll-behavior: smooth;
+  }
+
+  td {
+    padding: 8px;
   }
 
   /* swiper js */
@@ -19,16 +24,12 @@
     height: 100%;
   }
 
-  .swiper-pagination-active {
-    background-color: red !important;
-  }
-
   .swiper-slide:hover {
     @apply -translate-y-3 transform duration-300;
   }
   /* card */
   .card {
-    @apply bg-slate-100 rounded-lg  p-6;
+    @apply bg-slate-100 rounded-lg  p-6 z-10;
   }
 
   /* icon css */

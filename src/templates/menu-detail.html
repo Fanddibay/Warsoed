@@ -4,7 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Detail Menu</title>
+    <!-- meta text -->
+    <meta property="og:title" content="Warsoed" />
+    <meta property="og:description" content="Warsoed adalah aplikasi untuk memudahkan umkm dalam mencari konsumen" />
+    <meta property="og:url" content="www.warsoed.com" />
+    <meta property="og:image" content="images/dummy-logo.png" />
+    <meta name="theme-color" content="#000" />
+    <!-- font google api -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- output to tailwindcss -->
+    <link rel="stylesheet" href="/src/dist/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="/src/images/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/src/images/favicon/favicon.ico" type="image/x-icon" />
   </head>
-  <body></body>
+  <body class="">
+    <!-- header -->
+    <header class="mx-auto flex container mt-8">
+      <div class="justify-start left-[10px] md:left-[50px] absolute">
+        <a href="index.html" class="inset-0">
+          <i class="material-icons md-30 hover:-translate-y-1 transform">arrow_back</i>
+        </a>
+      </div>
+      <div class="justify-end right-[10px] md:right-[6rem] absolute">
+        <div class="md:flex">
+          <i class="material-icons md-30 right-0 absolute md:relative">home</i>
+          <br class="md:hidden block" />
+          <h5 id="lokasi__desa" class="md:mt-[2px] md:ml-3 text-xl text-gray-600">Pabuaran</h5>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <section class="mt-24">
+        <div class="items-center md:container md:mx-auto">
+          <h1 class="text-3xl font-bold capitalize mb-16 text-center">UMKM bu yani</h1>
+          <img
+            src="/src/images/jumbotron.png"
+            alt=""
+            class="w-[150%] md:w-[80%] rounded-[0.7rem] md:rounded-lg shadow-2xl"
+          />
+        </div>
+        <div class="grid grid-cols-4 mt-12 bg-white p-4 rounded-lg gap-0">
+          <div class="col-span-2">
+            <h5 class="text-xl font-bold capitalize">deeskripsi</h5>
+            <p class="font-light text-sm leading-loose text-justify mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quas voluptatem nulla, tenetur labore nihil
+            </p>
+          </div>
+          <div class="col-span-2 text-right">
+            <h5 class="text-xl font-bold capitalize">deeskripsi</h5>
+            <div class="mt-4">
+              <i class="material-icons md-30">home</i>
+              <p class="text-xs text-light">
+                <span class="-mt-4 text-xs"> Jl. Pabuaran Timur 24 </span>
+              </p>
+              <i class="material-icons md-30 mt-4">link</i>
+              <p class="text-xs text-light">Jl. Pabuaran Timur 24</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero -->
+      <!-- detail menu -->
+      <section class="mt-18 mx-auto container">
+        <!-- toggle menu -->
+        <div class="text-center justify-center flex">
+          <ul class="flex">
+            <li class="mr-8">
+              <button class="active:font-bold">
+                <i class="material-icons md-30">coffee</i> <br />
+                <span class="">Minuman</span>
+              </button>
+            </li>
+            <li class="border-slate-700 border-2"></li>
+            <li class="flex-col ml-8">
+              <button class="">
+                <i class="material-icons md-30">dinner_dining</i> <br />
+                <span class="">Makanan</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <!-- end toggle menu -->
+        <!-- menu makanan -->
+        <div class="mt-14 capitalize">
+          <table class="mx-auto w-full">
+            <tbody class="mx-auto">
+              <tr>
+                <td>Nasi Ayam</td>
+                <td class="text-right text-red-500">Rp 12.000</td>
+              </tr>
+              <tr>
+                <td>Nasi Ayam</td>
+                <td class="text-right text-red-500">Rp 12.000</td>
+              </tr>
+              <tr>
+                <td>Nasi Ayam</td>
+                <td class="text-right text-red-500">Rp 12.000</td>
+              </tr>
+              <tr>
+                <td>Nasi Ayam</td>
+                <td class="text-right text-red-500">Rp 12.000</td>
+              </tr>
+              <tr>
+                <td>Nasi Ayam</td>
+                <td class="text-right text-red-500">Rp 12.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- end menu makanan -->
+      </section>
+      <!-- end detail menu -->
+    </main>
+
+    <!-- end header -->
+  </body>
 </html>

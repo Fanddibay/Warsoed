@@ -110,9 +110,9 @@
     <section class="hidden lg:block">
       <div class="flex mb-96 mx-auto conainer">
         <div class="w-1/2 mt-28 md:pl-28">
-          <h1 class="font-extrabold text-4xl uppercase">Warsoed</h1>
-          <h3 class="font-light text-gray-300 text-2xl">Aplikasi untuk memudahkan umkm area <u>UNSOED</u></h3>
-          <p class="mt-16 text-justify font-light text-xl md:pr-20">
+          <h1 class="font-extrabold text-4xl uppercase text-red-500">Warsoed</h1>
+          <h3 class="font-light text-gray-500 text-2xl">Aplikasi untuk memudahkan umkm area <u>UNSOED</u></h3>
+          <p class="mt-16 text-justify font-light text-xl md:pr-20 text-black">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam id nostrum sit? Iusto minus earum
             assumenda eum quibusdam officiis consequatur, hic laboriosam deserunt aperiam nobis soluta aliquam tempore,
             quaerat possimus.
@@ -135,21 +135,23 @@
     <!-- end dekstop version -->
 
     <!-- main content -->
-    <main class="mx-auto mt-14 md:mt-36 lg:mt-22 container">
+    <main class="mt-14 md:mt-36 lg:mt-22">
       <!-- about -->
-      <section id="about">
+      <section id="about" class="mx-auto container">
         <div class="text-center flex- justify-center">
-          <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold capitalize">Memiliki service antara lain</h1>
+          <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold capitalize text-red-500">
+            Memiliki service antara lain
+          </h1>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-14 place-items-center justify-items-center">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-0 mt-14 place-items-center justify-items-center">
           <div class="text-center px-12">
             <img
               src="/src/images/mudah.svg"
               class="md:mt-0 mt-12 md:w-[90%] rounded-full text-center h-fulll content-center"
               alt=""
             />
-            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl">murah</h3>
-            <p class="font-light text-base md:text-lg mt-4 text-gray-500">
+            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl text-orange-600">murah</h3>
+            <p class="font-light text-base md:text-lg mt-4 text-gray-600">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
               deserunt ducimus.
             </p>
@@ -160,8 +162,8 @@
               class="md:mt-0 mt-12 md:w-[90%] rounded-full text-center h-full content-center"
               alt=""
             />
-            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl">murah</h3>
-            <p class="font-light text-base md:text-lg mt-4 text-gray-500">
+            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl text-orange-600">murah</h3>
+            <p class="font-light text-base md:text-lg mt-4 text-gray-600">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
               deserunt ducimus.
             </p>
@@ -172,8 +174,20 @@
               class="md:mt-0 mt-12 md:w-[90%] rounded-full text-center h-fulll content-center"
               alt=""
             />
-            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl">murah</h3>
-            <p class="font-light text-base md:text-lg mt-4 text-gray-500">
+            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl text-orange-600">murah</h3>
+            <p class="font-light text-base md:text-lg mt-4 text-gray-600">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
+              deserunt ducimus.
+            </p>
+          </div>
+          <div class="text-center px-12">
+            <img
+              src="/src/images/hamburger.svg"
+              class="md:mt-0 mt-12 md:w-[90%] rounded-full text-center h-fulll content-center"
+              alt=""
+            />
+            <h3 class="text-2xl font-bold capitalize mt-12 md:text-3xl text-orange-600">murah</h3>
+            <p class="font-light text-base md:text-lg mt-4 text-gray-600">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit repudiandae asperiores est odio
               deserunt ducimus.
             </p>
@@ -182,132 +196,138 @@
       </section>
       <!-- end about -->
 
-      <!-- list menu -->
-      <section id="list__menu" class="mt-32 mx-auto px-12 container">
-        <div class="text-start">
-          <h5 class="text-red-500 font-bold text-xl mb-4">Restaurant Kita</h5>
-          <h3 class="font-bold capitalize text-2xl">
-            Menu that always make <br />
-            you fall in love
-          </h3>
-        </div>
-      </section>
-
-      <!-- Slider main container dekstop -->
-      <section class="px-12 grid md:col-span-3 col-span-1">
-        <div class="swiper mt-12 mx-auto container text-center">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-1.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
-                <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
-                  <h6
-                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
-                    id="lokasi__alamat"
-                  >
-                    jl. Cendrawasih 5. Rt/01, Rw/02
-                  </h6>
-                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
-                <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
-                  <h6
-                    class="text-xl lg:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
-                    id="lokasi__alamat"
-                  >
-                    jl. Cendrawasih 5. Rt/01, Rw/02
-                  </h6>
-                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-3.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
-                <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
-                  <h6
-                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
-                    id="lokasi__alamat"
-                  >
-                    jl. Cendrawasih 5. Rt/01, Rw/02
-                  </h6>
-                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-1.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
-                <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
-                  <h6
-                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
-                    id="lokasi__alamat"
-                  >
-                    jl. Cendrawasih 5. Rt/01, Rw/02
-                  </h6>
-                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
-                <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
-                  <h6
-                    class="text-xl lg:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
-                    id="lokasi__alamat"
-                  >
-                    jl. Cendrawasih 5. Rt/01, Rw/02
-                  </h6>
-                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
-                <img src="/src/images/detail-3.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
-                <div class="mt-8 px-2">
-                  <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
-                  <h6
-                    class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
-                    id="lokasi__alamat"
-                  >
-                    jl. Cendrawasih 5. Rt/01, Rw/02
-                  </h6>
-                  <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
-                </div>
-              </a>
-            </div>
+      <section class="bg-gray-100 px-2 pb-6 pt-[4rem] mt-12">
+        <!-- list menu -->
+        <section id="list__menu" class="mx-auto px-12 container">
+          <div class="text-start">
+            <h5 class="text-red-500 font-bold text-xl mb-4">Restaurant Kita</h5>
+            <h3 class="font-bold capitalize text-2xl text-gray-900">
+              Menu that always make <br />
+              you fall in love
+            </h3>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination active:bg-red-500"></div>
-        </div>
+        </section>
+
+        <!-- Slider main container dekstop -->
+        <section class="px-12 grid md:col-span-3 col-span-1 mx-auto container">
+          <div class="swiper mt-12 mx-auto container text-center">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                  <img src="/src/images/detail-1.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                  <div class="mt-8 px-2">
+                    <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
+                    <h6
+                      class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                      id="lokasi__alamat"
+                    >
+                      jl. Cendrawasih 5. Rt/01, Rw/02
+                    </h6>
+                    <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                  <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                  <div class="mt-8 px-2">
+                    <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
+                    <h6
+                      class="text-xl lg:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                      id="lokasi__alamat"
+                    >
+                      jl. Cendrawasih 5. Rt/01, Rw/02
+                    </h6>
+                    <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                  <img src="/src/images/detail-3.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                  <div class="mt-8 px-2">
+                    <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
+                    <h6
+                      class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                      id="lokasi__alamat"
+                    >
+                      jl. Cendrawasih 5. Rt/01, Rw/02
+                    </h6>
+                    <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                  <img src="/src/images/detail-1.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                  <div class="mt-8 px-2">
+                    <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
+                    <h6
+                      class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                      id="lokasi__alamat"
+                    >
+                      jl. Cendrawasih 5. Rt/01, Rw/02
+                    </h6>
+                    <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                  <img src="/src/images/detail-2.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                  <div class="mt-8 px-2">
+                    <h5 class="text-xl font-bold text-gray-700 text-left" id="nama__umkm">Bu yuni</h5>
+                    <h6
+                      class="text-xl lg:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                      id="lokasi__alamat"
+                    >
+                      jl. Cendrawasih 5. Rt/01, Rw/02
+                    </h6>
+                    <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="detail.html" class="col-span-1 hover:-translate-y-2 transform duration-300">
+                  <img src="/src/images/detail-3.jpg" class="w-[100%] lg:w-[80%]" id="gambar__umkm" alt="" />
+                  <div class="mt-8 px-2">
+                    <h5 class="text-xl font-bold text-gray-700 text-left z-20" id="nama__umkm">Bu yuni</h5>
+                    <h6
+                      class="text-sm md:text-lg md:my-0 my-4 font-light text-gray-500 capitalize text-left"
+                      id="lokasi__alamat"
+                    >
+                      jl. Cendrawasih 5. Rt/01, Rw/02
+                    </h6>
+                    <p class="text-right lg:mr-[96px] mt-4 text-red-500 text-lg" id="jumlah__menu">24 Menu</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination active:bg-red-500"></div>
+          </div>
+        </section>
+        <!-- end list menu -->
       </section>
-      <!-- end list menu -->
       <!-- What about customer -->
       <section class="mx-auto container px-12 mt-36">
         <div class="grid lg:grid-cols-2">
           <hr class="block lg:hidden" />
-          <h3 class="lg:hidden block text-2xl text-center md:text-left mb-8 md:mb-4 mt-6 font-bold capitalize">
+          <h3
+            class="lg:hidden block text-2xl text-center md:text-left mb-8 md:mb-4 mt-6 font-bold capitalize text-red-500"
+          >
             What our customer <br />say about us
           </h3>
           <div class="">
             <img src="/src/images/jumbotron.png" class="w-full lg:w-[80%] md:h-[70%] lg:h-[100%]" alt="" />
           </div>
           <div class="self-center lg:pr-24">
-            <h3 class="lg:block hidden text-3xl font-bold capitalize">What our customer <br />say about us</h3>
-            <p class="text-light text-base lg:text-lg text-gray-500 text-justify leading-tight mt-8 md:-mt-28 lg:mt-8">
+            <h3 class="lg:block hidden text-3xl font-bold capitalize text-red-500">
+              What our customer <br / ><span class="underline">say about us</span>
+            </h3>
+            <p class="text-light text-base lg:text-lg text-gray-600 text-justify leading-tight mt-8 md:-mt-28 lg:mt-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quam ducimus consequatur, accusamus et
               minus eum? Tempora praesentium animi est sed perspiciatis, saepe corporis adipisci architecto ipsa, alias
               pariatur debitis, eum laudantium ut Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
@@ -318,7 +338,7 @@
       </section>
       <!-- end What about customer -->
       <!-- request to join -->
-      <section class="mt-36 bg-slate-300 rounded-lg mx-auto container">
+      <section class="mt-36 bg-gray-100 rounded-lg mx-auto container">
         <div class="py-18 items-center text-center flex-row md:px-0 px-6">
           <h1 class="text-2xl md:text-3xl font-bold capitalize">Daftarkan Usahamu Sekarang!</h1>
           <h5 class="md:text-xl font-light text-center lg:px-88 mt-8">
