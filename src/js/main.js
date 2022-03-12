@@ -113,3 +113,8 @@ function data() {
     },
   };
 }
+
+// alert function
+function alertFunction() {
+  alert("yakin ingin di hapus?");
+}

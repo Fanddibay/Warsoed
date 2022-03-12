@@ -18,6 +18,22 @@
     padding: 8px;
   }
 
+  .bg-login {
+    /* The image used */
+    background-image: url("/src/images/login-img.jpeg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  label {
+    cursor: pointer;
+  }
+
   .active-work {
     background-color: #cecece;
     padding: 12px;
