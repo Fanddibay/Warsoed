@@ -438,17 +438,6 @@ td {
   padding: 8px;
 }
 
-.bg-login {
-  /* The image used */
-  background-image: url("/src/images/login-img.jpeg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 label {
   cursor: pointer;
 }
@@ -685,16 +674,6 @@ label {
   bottom: 0px;
 }
 
-.inset-y-5{
-  top: 1.25rem;
-  bottom: 1.25rem;
-}
-
-.inset-y-9{
-  top: 2.25rem;
-  bottom: 2.25rem;
-}
-
 .left-\[10px\]{
   left: 10px;
 }
@@ -729,38 +708,6 @@ label {
 
 .right-10{
   right: 2.5rem;
-}
-
-.bottom-5{
-  bottom: 1.25rem;
-}
-
-.top-5{
-  top: 1.25rem;
-}
-
-.top-10{
-  top: 2.5rem;
-}
-
-.left-10{
-  left: 2.5rem;
-}
-
-.left-\[15\]{
-  left: 15;
-}
-
-.left-12{
-  left: 3rem;
-}
-
-.top-\[5rem\]{
-  top: 5rem;
-}
-
-.top-\[10rem\]{
-  top: 10rem;
 }
 
 .z-\[70\]{
@@ -827,11 +774,6 @@ label {
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
-}
-
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mt-8{
@@ -936,18 +878,6 @@ label {
 
 .mb-2{
   margin-bottom: 0.5rem;
-}
-
-.mt-\[50vh\]{
-  margin-top: 50vh;
-}
-
-.mt-auto{
-  margin-top: auto;
-}
-
-.mt-52{
-  margin-top: 13rem;
 }
 
 .mt-60{
@@ -1215,10 +1145,6 @@ label {
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.place-self-center{
-  place-self: center;
-}
-
 .self-center{
   align-self: center;
 }
@@ -1233,14 +1159,6 @@ label {
 
 .overflow-y-auto{
   overflow-y: auto;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
-}
-
-.overflow-y-hidden{
-  overflow-y: hidden;
 }
 
 .rounded-\[1rem\]{
@@ -1427,20 +1345,12 @@ label {
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 
-.bg-transparent{
-  background-color: transparent;
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
 
 .bg-hero-img{
   background-image: url('/src/images/jumbotron.png');
-}
-
-.bg-login-img{
-  background-image: url('/src/images/login-img.png');
 }
 
 .to-transparent{
@@ -1495,18 +1405,6 @@ label {
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-\[100rem\]{
-  padding: 100rem;
-}
-
-.p-30{
-  padding: 70px;
-}
-
-.p-12{
-  padding: 3rem;
 }
 
 .px-2{
@@ -1567,26 +1465,6 @@ label {
 .py-36{
   padding-top: 9rem;
   padding-bottom: 9rem;
-}
-
-.px-24{
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
-.px-36{
-  padding-left: 9rem;
-  padding-right: 9rem;
-}
-
-.px-52{
-  padding-left: 13rem;
-  padding-right: 13rem;
-}
-
-.py-24{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .pb-12{
@@ -1826,6 +1704,16 @@ label {
   color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
+.text-red-800{
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
+}
+
+.text-red-200{
+  --tw-text-opacity: 1;
+  color: rgb(254 202 202 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1852,10 +1740,6 @@ label {
 
 .opacity-100{
   opacity: 1;
-}
-
-.opacity-25{
-  opacity: 0.25;
 }
 
 .shadow-md{
@@ -2372,6 +2256,10 @@ label {
     text-align: left;
   }
 
+  .md\:text-right{
+    text-align: right;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2390,6 +2278,11 @@ label {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
